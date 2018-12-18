@@ -1,0 +1,16 @@
+com\scienjus\authorization\annotation\Authorization.class
+com\scienjus\repository\UserRepository.class
+com\scienjus\Application.class
+com\scienjus\authorization\manager\impl\RedisTokenManager.class
+com\scienjus\authorization\resolvers\CurrentUserMethodArgumentResolver.class
+com\scienjus\authorization\model\TokenModel.class
+com\scienjus\authorization\interceptor\AuthorizationInterceptor.class
+com\scienjus\controller\TokenController.class
+com\scienjus\authorization\annotation\CurrentUser.class
+com\scienjus\model\ResultModel.class
+com\scienjus\domain\User.class
+com\scienjus\config\Constants.class
+com\scienjus\config\SwaggerConfig.class
+com\scienjus\config\MvcConfig.class
+com\scienjus\authorization\manager\TokenManager.class
+com\scienjus\config\ResultStatus.class

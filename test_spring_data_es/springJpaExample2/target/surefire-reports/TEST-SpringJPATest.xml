@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="2.044" errors="1" skipped="0" tests="1" name="SpringJPATest">
+  <properties>
+    <property name="idea.version" value="14.1.4"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\Java\jdk1.7.0_65\jre\bin"/>
+    <property name="java.vm.version" value="24.65-b04"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="idea.launcher.port" value="7540"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\ppsfile\springJpaExample2"/>
+    <property name="java.runtime.version" value="1.7.0_65-b19"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="D:\Java\jdk1.7.0_65\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="F:\apache-maven-3.2.3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\Java\jdk1.7.0_65\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\open\buildtool\gradle-2.4\bin;E:\open\spring\spring-roo-1.3.1.RELEASE\bin;C:\Apache24\bin;E:\PHP;E:\PHP\ext;D:\Python34\;D:\Python34\Scripts;D:\app\oracle\win32\11.2.0\dbhome_1;D:\app\oracle\product\11.2.0\dbhome_1\bin;F:\apache-maven-3.2.3\bin;D:\Java\apache-ant-1.8.4\bin;D:\R-3.1.1\bin\x64;D:\Java\jdk1.7.0_75\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;d:\Program Files (x86)\IDM Computer Solutions\UltraEdit-32;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\MySQL\MySQL5.5\bin;D:\MySQL\MySQL Server 5.5\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\VanDyke Software\Clients\;D:\Program Files\Git\cmd;D:\Program Files (x86)\Rational\common;D:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="maven.repo.local" value="D:\Documents\.m2\repository"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="idea.launcher.bin.path" value="D:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.4\bin"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="java.class.path" value="F:\apache-maven-3.2.3\boot\plexus-classworlds-2.5.1.jar;D:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.4\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="D:\Java\jdk1.7.0_65\jre"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=14.1.4 -s F:\apache-maven-3.2.3\conf\settings.xml -Dmaven.repo.local=D:\Documents\.m2\repository test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_65"/>
+    <property name="java.ext.dirs" value="D:\Java\jdk1.7.0_65\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\Java\jdk1.7.0_65\jre\lib\resources.jar;D:\Java\jdk1.7.0_65\jre\lib\rt.jar;D:\Java\jdk1.7.0_65\jre\lib\sunrsasign.jar;D:\Java\jdk1.7.0_65\jre\lib\jsse.jar;D:\Java\jdk1.7.0_65\jre\lib\jce.jar;D:\Java\jdk1.7.0_65\jre\lib\charsets.jar;D:\Java\jdk1.7.0_65\jre\lib\jfr.jar;D:\Java\jdk1.7.0_65\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="F:\apache-maven-3.2.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="2.044" classname="SpringJPATest" name="testSave">
+    <error message="Could not open JPA EntityManager for transaction; nested exception is javax.persistence.PersistenceException: org.hibernate.exception.JDBCConnectionException: Could not open connection" type="org.springframework.transaction.CannotCreateTransactionException">org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is javax.persistence.PersistenceException: org.hibernate.exception.JDBCConnectionException: Could not open connection
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:431)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.test.context.transaction.TransactionContext.startTransaction(TransactionContext.java:98)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:200)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:249)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:72)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.JDBCConnectionException: Could not open connection
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1763)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1677)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.throwPersistenceException(AbstractEntityManagerImpl.java:1771)
+	at org.hibernate.jpa.internal.TransactionImpl.begin(TransactionImpl.java:64)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:166)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:380)
+	... 31 more
+Caused by: org.hibernate.exception.JDBCConnectionException: Could not open connection
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:132)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:235)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:171)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.doBegin(JdbcTransaction.java:67)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.begin(AbstractTransactionImpl.java:162)
+	at org.hibernate.internal.SessionImpl.beginTransaction(SessionImpl.java:1435)
+	at org.hibernate.jpa.internal.TransactionImpl.begin(TransactionImpl.java:61)
+	... 33 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2232)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2265)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2064)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:155)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:120)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:380)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:228)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:297)
+	... 59 more
+</error>
+    <system-out>22:21:14,798 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+22:21:14,798 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+22:21:14,798 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/E:/ppsfile/springJpaExample2/target/classes/logback.xml]
+22:21:14,848 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+22:21:14,858 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+22:21:14,865 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+22:21:14,925 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+22:21:14,925 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+22:21:14,925 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+22:21:14,926 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.hibernate] to DEBUG
+22:21:14,926 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.hibernate] to false
+22:21:14,926 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[org.hibernate]
+22:21:14,926 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to ERROR
+22:21:14,926 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+22:21:14,926 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+22:21:14,927 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@32e565d7 - Registering current configuration as safe fallback point
+
+2016-06-23 22:21:15 [main] DEBUG o.h.jpa.internal.util.LogHelper - PersistenceUnitInfo [
+	name: JPAExamples
+	persistence provider classname: org.hibernate.jpa.HibernatePersistenceProvider
+	classloader: sun.misc.Launcher$AppClassLoader@7f29b922
+	excludeUnlistedClasses: false
+	JTA datasource: null
+	Non JTA datasource: org.springframework.jdbc.datasource.DriverManagerDataSource@6724f6a
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/E:/ppsfile/springJpaExample2/target/classes
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names []
+	Mapping files names []
+	Properties []
+2016-06-23 22:21:15 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2016-06-23 22:21:15 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2016-06-23 22:21:15 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2016-06-23 22:21:15 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.jpa.event.spi.JpaIntegrator].
+2016-06-23 22:21:15 [main] DEBUG o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -&gt; [org.hibernate.dialect.MySQL5Dialect] (replacing [org.hibernate.dialect.MySQL5Dialect])
+2016-06-23 22:21:15 [main] DEBUG o.h.b.r.s.i.StrategySelectorImpl - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -&gt; [org.hibernate.dialect.MySQL5InnoDBDialect] (replacing [org.hibernate.dialect.MySQL5InnoDBDialect])
+2016-06-23 22:21:15 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.8.Final}
+2016-06-23 22:21:15 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2016-06-23 22:21:15 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2016-06-23 22:21:15 [main] DEBUG o.h.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@96f753e
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@96f753e
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -&gt; org.hibernate.type.BooleanType@96f753e
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -&gt; org.hibernate.type.NumericBooleanType@4a8fa358
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -&gt; org.hibernate.type.TrueFalseType@37362188
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -&gt; org.hibernate.type.YesNoType@306369f
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -&gt; org.hibernate.type.ByteType@42c126c5
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -&gt; org.hibernate.type.ByteType@42c126c5
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -&gt; org.hibernate.type.ByteType@42c126c5
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -&gt; org.hibernate.type.CharacterType@292b2c95
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -&gt; org.hibernate.type.CharacterType@292b2c95
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -&gt; org.hibernate.type.CharacterType@292b2c95
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -&gt; org.hibernate.type.ShortType@2ff4f32e
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -&gt; org.hibernate.type.ShortType@2ff4f32e
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -&gt; org.hibernate.type.ShortType@2ff4f32e
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -&gt; org.hibernate.type.IntegerType@7b799a0b
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -&gt; org.hibernate.type.IntegerType@7b799a0b
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -&gt; org.hibernate.type.IntegerType@7b799a0b
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -&gt; org.hibernate.type.LongType@628ea264
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -&gt; org.hibernate.type.LongType@628ea264
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -&gt; org.hibernate.type.LongType@628ea264
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -&gt; org.hibernate.type.FloatType@7f994081
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -&gt; org.hibernate.type.FloatType@7f994081
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -&gt; org.hibernate.type.FloatType@7f994081
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -&gt; org.hibernate.type.DoubleType@b0e9f8b
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -&gt; org.hibernate.type.DoubleType@b0e9f8b
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -&gt; org.hibernate.type.DoubleType@b0e9f8b
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -&gt; org.hibernate.type.BigDecimalType@6897381c
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -&gt; org.hibernate.type.BigDecimalType@6897381c
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -&gt; org.hibernate.type.BigIntegerType@77b4ae5f
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -&gt; org.hibernate.type.BigIntegerType@77b4ae5f
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -&gt; org.hibernate.type.StringType@38c60261
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -&gt; org.hibernate.type.StringType@38c60261
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -&gt; org.hibernate.type.StringNVarcharType@2ede611c
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -&gt; org.hibernate.type.CharacterNCharType@78267233
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -&gt; org.hibernate.type.UrlType@28ad5127
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -&gt; org.hibernate.type.UrlType@28ad5127
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -&gt; org.hibernate.type.DateType@580d63fe
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -&gt; org.hibernate.type.DateType@580d63fe
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -&gt; org.hibernate.type.TimeType@22aef4e4
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -&gt; org.hibernate.type.TimeType@22aef4e4
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -&gt; org.hibernate.type.TimestampType@3332625e
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -&gt; org.hibernate.type.TimestampType@3332625e
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -&gt; org.hibernate.type.TimestampType@3332625e
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -&gt; org.hibernate.type.DbTimestampType@7a31b0eb
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -&gt; org.hibernate.type.CalendarType@22c1ae1a
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -&gt; org.hibernate.type.CalendarType@22c1ae1a
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -&gt; org.hibernate.type.CalendarType@22c1ae1a
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -&gt; org.hibernate.type.CalendarDateType@5442b455
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -&gt; org.hibernate.type.LocaleType@1603d90b
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -&gt; org.hibernate.type.LocaleType@1603d90b
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -&gt; org.hibernate.type.CurrencyType@3d6a71e9
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -&gt; org.hibernate.type.CurrencyType@3d6a71e9
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -&gt; org.hibernate.type.TimeZoneType@1396ae3e
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -&gt; org.hibernate.type.TimeZoneType@1396ae3e
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -&gt; org.hibernate.type.ClassType@1a3fec2f
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -&gt; org.hibernate.type.ClassType@1a3fec2f
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -&gt; org.hibernate.type.UUIDBinaryType@8a8ad40
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -&gt; org.hibernate.type.UUIDBinaryType@8a8ad40
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -&gt; org.hibernate.type.UUIDCharType@4113f65f
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -&gt; org.hibernate.type.PostgresUUIDType@ad443ea
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -&gt; org.hibernate.type.BinaryType@721d0440
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -&gt; org.hibernate.type.BinaryType@721d0440
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -&gt; org.hibernate.type.BinaryType@721d0440
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -&gt; org.hibernate.type.WrapperBinaryType@2617bf1b
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -&gt; org.hibernate.type.WrapperBinaryType@2617bf1b
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -&gt; org.hibernate.type.WrapperBinaryType@2617bf1b
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -&gt; org.hibernate.type.ImageType@7207ca7e
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -&gt; org.hibernate.type.CharArrayType@1f814cc5
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -&gt; org.hibernate.type.CharArrayType@1f814cc5
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -&gt; org.hibernate.type.CharArrayType@1f814cc5
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -&gt; org.hibernate.type.CharacterArrayType@7aa8cd37
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -&gt; org.hibernate.type.CharacterArrayType@7aa8cd37
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -&gt; org.hibernate.type.CharacterArrayType@7aa8cd37
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -&gt; org.hibernate.type.TextType@2dcb0bb
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -&gt; org.hibernate.type.NTextType@769ceb67
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -&gt; org.hibernate.type.BlobType@73136e08
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -&gt; org.hibernate.type.BlobType@73136e08
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -&gt; org.hibernate.type.MaterializedBlobType@405c9cef
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -&gt; org.hibernate.type.ClobType@78c87f7c
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -&gt; org.hibernate.type.ClobType@78c87f7c
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -&gt; org.hibernate.type.NClobType@7e4a09ee
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -&gt; org.hibernate.type.NClobType@7e4a09ee
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -&gt; org.hibernate.type.MaterializedClobType@70888f88
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -&gt; org.hibernate.type.MaterializedNClobType@18ef5ced
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -&gt; org.hibernate.type.SerializableType@292f062b
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -&gt; org.hibernate.type.ObjectType@14c6fe75
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -&gt; org.hibernate.type.ObjectType@14c6fe75
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -&gt; org.hibernate.type.AdaptedImmutableType@5533fd6a
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -&gt; org.hibernate.type.AdaptedImmutableType@484265d9
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -&gt; org.hibernate.type.AdaptedImmutableType@7f2cae9e
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -&gt; org.hibernate.type.AdaptedImmutableType@4e7c484c
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -&gt; org.hibernate.type.AdaptedImmutableType@416e9dd5
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -&gt; org.hibernate.type.AdaptedImmutableType@453c2c82
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -&gt; org.hibernate.type.AdaptedImmutableType@718e2e50
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -&gt; org.hibernate.type.AdaptedImmutableType@2d82c06e
+2016-06-23 22:21:15 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-06-23 22:21:15 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -&gt; [org.hibernate.id.UUIDGenerator]
+2016-06-23 22:21:15 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -&gt; [org.hibernate.id.GUIDGenerator]
+2016-06-23 22:21:15 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -&gt; [org.hibernate.id.UUIDHexGenerator]
+2016-06-23 22:21:15 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -&gt; [org.hibernate.id.UUIDHexGenerator]
+2016-06-23 22:21:15 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [hilo] -&gt; [org.hibernate.id.TableHiLoGenerator]
+2016-06-23 22:21:15 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -&gt; [org.hibernate.id.Assigned]
+2016-06-23 22:21:15 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -&gt; [org.hibernate.id.IdentityGenerator]
+2016-06-23 22:21:15 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -&gt; [org.hibernate.id.SelectGenerator]
+2016-06-23 22:21:15 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -&gt; [org.hibernate.id.SequenceGenerator]
+2016-06-23 22:21:15 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -&gt; [org.hibernate.id.SequenceHiLoGenerator]
+2016-06-23 22:21:15 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -&gt; [org.hibernate.id.IncrementGenerator]
+2016-06-23 22:21:15 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -&gt; [org.hibernate.id.ForeignGenerator]
+2016-06-23 22:21:15 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -&gt; [org.hibernate.id.SequenceIdentityGenerator]
+2016-06-23 22:21:15 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -&gt; [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2016-06-23 22:21:15 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -&gt; [org.hibernate.id.enhanced.TableGenerator]
+2016-06-23 22:21:15 [main] DEBUG org.hibernate.cfg.Configuration - Preparing to build session factory with filters : {}
+2016-06-23 22:21:17 [main] WARN  o.h.e.jdbc.internal.JdbcServicesImpl - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2016-06-23 22:21:17 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-06-23 22:21:17 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.Configuration - Processing hbm.xml files
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.Configuration - Process annotated classes
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.journaldev.spring.jpa.model.Employee
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName&apos;DTYPE&apos;, discriminatorTypeName=&apos;string&apos;}
+2016-06-23 22:21:18 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name Employee
+2016-06-23 22:21:18 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.journaldev.spring.jpa.model.Employee on table Employee
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Employee), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2016-06-23 22:21:18 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+2016-06-23 22:21:18 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.journaldev.spring.jpa.model.Employee:id]
+2016-06-23 22:21:18 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+2016-06-23 22:21:18 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Employee), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2016-06-23 22:21:18 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+2016-06-23 22:21:18 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.journaldev.spring.jpa.model.Employee:name]
+2016-06-23 22:21:18 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for name
+2016-06-23 22:21:18 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property name
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Employee), mappingColumn=role, insertable=true, updatable=true, unique=false}
+2016-06-23 22:21:18 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property role with lazy=false
+2016-06-23 22:21:18 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.journaldev.spring.jpa.model.Employee:role]
+2016-06-23 22:21:18 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for role
+2016-06-23 22:21:18 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property role
+2016-06-23 22:21:18 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+2016-06-23 22:21:18 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+2016-06-23 22:21:18 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for role
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.Configuration - Processing fk mappings (*ToOne and JoinedSubclass)
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.Configuration - Processing collection mappings
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.Configuration - Processing native query and ResultSetMapping mappings
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.Configuration - Processing association property references
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.Configuration - Creating tables&apos; unique integer identifiers
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.Configuration - Processing foreign key constraints
+2016-06-23 22:21:18 [main] DEBUG o.h.e.t.j.p.i.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+2016-06-23 22:21:18 [main] DEBUG o.h.e.t.j.p.i.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2016-06-23 22:21:18 [main] DEBUG o.h.e.t.j.p.i.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Scrollable result sets: disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Wrap result sets: disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - multi-tenancy strategy : NONE
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Using BatchFetchStyle : LEGACY
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default null ordering: none
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+2016-06-23 22:21:18 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Query cache: disabled
+2016-06-23 22:21:18 [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Second-level cache direct-reference entries: disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Automatic eviction of collection cache: disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Statistics: disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - Allow initialization of lazy state outside session : : disabled
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.cfg.SettingsFactory - JTA Track by Thread: enabled
+2016-06-23 22:21:18 [main] DEBUG o.h.internal.SessionFactoryImpl - Building session factory
+2016-06-23 22:21:18 [main] DEBUG o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+2016-06-23 22:21:18 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {idea.version=14.1.4, java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=D:\Java\jdk1.7.0_65\jre\bin, java.vm.version=24.65-b04, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=CN, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=Service Pack 1, java.vm.specification.name=Java Virtual Machine Specification, user.dir=E:\ppsfile\springJpaExample2, javax.persistence.sharedCache.mode=UNSPECIFIED, java.runtime.version=1.7.0_65-b19, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, basedir=E:\ppsfile\springJpaExample2, java.endorsed.dirs=D:\Java\jdk1.7.0_65\jre\lib\endorsed, os.arch=amd64, surefire.real.class.path=E:\ppsfile\springJpaExample2\target\surefire\surefirebooter1262736203581851621.jar, java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 7, sun.jnu.encoding=GBK, java.library.path=D:\Java\jdk1.7.0_65\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\open\buildtool\gradle-2.4\bin;E:\open\spring\spring-roo-1.3.1.RELEASE\bin;C:\Apache24\bin;E:\PHP;E:\PHP\ext;D:\Python34\;D:\Python34\Scripts;D:\app\oracle\win32\11.2.0\dbhome_1;D:\app\oracle\product\11.2.0\dbhome_1\bin;F:\apache-maven-3.2.3\bin;D:\Java\apache-ant-1.8.4\bin;D:\R-3.1.1\bin\x64;D:\Java\jdk1.7.0_75\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;d:\Program Files (x86)\IDM Computer Solutions\UltraEdit-32;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\MySQL\MySQL5.5\bin;D:\MySQL\MySQL Server 5.5\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\VanDyke Software\Clients\;D:\Program Files\Git\cmd;D:\Program Files (x86)\Rational\common;D:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;., surefire.test.class.path=E:\ppsfile\springJpaExample2\target\test-classes;E:\ppsfile\springJpaExample2\target\classes;D:\Documents\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\1.2.3.RELEASE\spring-boot-starter-data-jpa-1.2.3.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\boot\spring-boot-starter\1.2.3.RELEASE\spring-boot-starter-1.2.3.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\boot\spring-boot\1.2.3.RELEASE\spring-boot-1.2.3.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\1.2.3.RELEASE\spring-boot-autoconfigure-1.2.3.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\boot\spring-boot-starter-logging\1.2.3.RELEASE\spring-boot-starter-logging-1.2.3.RELEASE.jar;D:\Documents\.m2\repository\org\slf4j\jul-to-slf4j\1.7.11\jul-to-slf4j-1.7.11.jar;D:\Documents\.m2\repository\org\slf4j\log4j-over-slf4j\1.7.11\log4j-over-slf4j-1.7.11.jar;D:\Documents\.m2\repository\ch\qos\logback\logback-classic\1.1.3\logback-classic-1.1.3.jar;D:\Documents\.m2\repository\ch\qos\logback\logback-core\1.1.3\logback-core-1.1.3.jar;D:\Documents\.m2\repository\org\yaml\snakeyaml\1.14\snakeyaml-1.14.jar;D:\Documents\.m2\repository\org\springframework\boot\spring-boot-starter-aop\1.2.3.RELEASE\spring-boot-starter-aop-1.2.3.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\spring-aop\4.1.6.RELEASE\spring-aop-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\Documents\.m2\repository\org\aspectj\aspectjrt\1.8.5\aspectjrt-1.8.5.jar;D:\Documents\.m2\repository\org\aspectj\aspectjweaver\1.8.5\aspectjweaver-1.8.5.jar;D:\Documents\.m2\repository\org\springframework\spring-core\4.1.6.RELEASE\spring-core-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\1.2.3.RELEASE\spring-boot-starter-jdbc-1.2.3.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\spring-jdbc\4.1.6.RELEASE\spring-jdbc-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\org\apache\tomcat\tomcat-jdbc\7.0.59\tomcat-jdbc-7.0.59.jar;D:\Documents\.m2\repository\org\apache\tomcat\tomcat-juli\7.0.59\tomcat-juli-7.0.59.jar;D:\Documents\.m2\repository\org\springframework\spring-tx\4.1.6.RELEASE\spring-tx-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\org\hibernate\hibernate-entitymanager\4.3.8.Final\hibernate-entitymanager-4.3.8.Final.jar;D:\Documents\.m2\repository\org\jboss\logging\jboss-logging\3.1.3.GA\jboss-logging-3.1.3.GA.jar;D:\Documents\.m2\repository\org\jboss\logging\jboss-logging-annotations\1.2.0.Beta1\jboss-logging-annotations-1.2.0.Beta1.jar;D:\Documents\.m2\repository\org\hibernate\hibernate-core\4.3.8.Final\hibernate-core-4.3.8.Final.jar;D:\Documents\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;D:\Documents\.m2\repository\org\jboss\jandex\1.1.0.Final\jandex-1.1.0.Final.jar;D:\Documents\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;D:\Documents\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;D:\Documents\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.5.Final\hibernate-commons-annotations-4.0.5.Final.jar;D:\Documents\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;D:\Documents\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;D:\Documents\.m2\repository\javax\transaction\javax.transaction-api\1.2\javax.transaction-api-1.2.jar;D:\Documents\.m2\repository\org\springframework\spring-orm\4.1.6.RELEASE\spring-orm-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\spring-beans\4.1.6.RELEASE\spring-beans-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\data\spring-data-jpa\1.7.2.RELEASE\spring-data-jpa-1.7.2.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\data\spring-data-commons\1.9.2.RELEASE\spring-data-commons-1.9.2.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\spring-context\4.1.6.RELEASE\spring-context-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\spring-expression\4.1.6.RELEASE\spring-expression-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\org\slf4j\slf4j-api\1.7.11\slf4j-api-1.7.11.jar;D:\Documents\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.11\jcl-over-slf4j-1.7.11.jar;D:\Documents\.m2\repository\org\springframework\spring-aspects\4.1.6.RELEASE\spring-aspects-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\com\h2database\h2\1.4.185\h2-1.4.185.jar;D:\Documents\.m2\repository\mysql\mysql-connector-java\5.1.34\mysql-connector-java-5.1.34.jar;D:\Documents\.m2\repository\org\springframework\spring-test\4.1.6.RELEASE\spring-test-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\junit\junit\4.12\junit-4.12.jar;D:\Documents\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;, hibernate.ejb.persistenceUnitName=JPAExamples, java.specification.name=Java Platform API Specification, java.class.version=51.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, maven.repo.local=D:\Documents\.m2\repository, os.version=6.1, user.home=C:\Users\Administrator, user.timezone=Asia/Shanghai, java.awt.printerjob=sun.awt.windows.WPrinterJob, java.specification.version=1.7, file.encoding=GBK, javax.persistence.nonJtaDataSource=org.springframework.jdbc.datasource.DriverManagerDataSource@6724f6a, user.name=Administrator, java.class.path=E:\ppsfile\springJpaExample2\target\test-classes;E:\ppsfile\springJpaExample2\target\classes;D:\Documents\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\1.2.3.RELEASE\spring-boot-starter-data-jpa-1.2.3.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\boot\spring-boot-starter\1.2.3.RELEASE\spring-boot-starter-1.2.3.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\boot\spring-boot\1.2.3.RELEASE\spring-boot-1.2.3.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\1.2.3.RELEASE\spring-boot-autoconfigure-1.2.3.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\boot\spring-boot-starter-logging\1.2.3.RELEASE\spring-boot-starter-logging-1.2.3.RELEASE.jar;D:\Documents\.m2\repository\org\slf4j\jul-to-slf4j\1.7.11\jul-to-slf4j-1.7.11.jar;D:\Documents\.m2\repository\org\slf4j\log4j-over-slf4j\1.7.11\log4j-over-slf4j-1.7.11.jar;D:\Documents\.m2\repository\ch\qos\logback\logback-classic\1.1.3\logback-classic-1.1.3.jar;D:\Documents\.m2\repository\ch\qos\logback\logback-core\1.1.3\logback-core-1.1.3.jar;D:\Documents\.m2\repository\org\yaml\snakeyaml\1.14\snakeyaml-1.14.jar;D:\Documents\.m2\repository\org\springframework\boot\spring-boot-starter-aop\1.2.3.RELEASE\spring-boot-starter-aop-1.2.3.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\spring-aop\4.1.6.RELEASE\spring-aop-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\Documents\.m2\repository\org\aspectj\aspectjrt\1.8.5\aspectjrt-1.8.5.jar;D:\Documents\.m2\repository\org\aspectj\aspectjweaver\1.8.5\aspectjweaver-1.8.5.jar;D:\Documents\.m2\repository\org\springframework\spring-core\4.1.6.RELEASE\spring-core-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\1.2.3.RELEASE\spring-boot-starter-jdbc-1.2.3.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\spring-jdbc\4.1.6.RELEASE\spring-jdbc-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\org\apache\tomcat\tomcat-jdbc\7.0.59\tomcat-jdbc-7.0.59.jar;D:\Documents\.m2\repository\org\apache\tomcat\tomcat-juli\7.0.59\tomcat-juli-7.0.59.jar;D:\Documents\.m2\repository\org\springframework\spring-tx\4.1.6.RELEASE\spring-tx-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\org\hibernate\hibernate-entitymanager\4.3.8.Final\hibernate-entitymanager-4.3.8.Final.jar;D:\Documents\.m2\repository\org\jboss\logging\jboss-logging\3.1.3.GA\jboss-logging-3.1.3.GA.jar;D:\Documents\.m2\repository\org\jboss\logging\jboss-logging-annotations\1.2.0.Beta1\jboss-logging-annotations-1.2.0.Beta1.jar;D:\Documents\.m2\repository\org\hibernate\hibernate-core\4.3.8.Final\hibernate-core-4.3.8.Final.jar;D:\Documents\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;D:\Documents\.m2\repository\org\jboss\jandex\1.1.0.Final\jandex-1.1.0.Final.jar;D:\Documents\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;D:\Documents\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;D:\Documents\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.5.Final\hibernate-commons-annotations-4.0.5.Final.jar;D:\Documents\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;D:\Documents\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;D:\Documents\.m2\repository\javax\transaction\javax.transaction-api\1.2\javax.transaction-api-1.2.jar;D:\Documents\.m2\repository\org\springframework\spring-orm\4.1.6.RELEASE\spring-orm-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\spring-beans\4.1.6.RELEASE\spring-beans-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\data\spring-data-jpa\1.7.2.RELEASE\spring-data-jpa-1.7.2.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\data\spring-data-commons\1.9.2.RELEASE\spring-data-commons-1.9.2.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\spring-context\4.1.6.RELEASE\spring-context-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\org\springframework\spring-expression\4.1.6.RELEASE\spring-expression-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\org\slf4j\slf4j-api\1.7.11\slf4j-api-1.7.11.jar;D:\Documents\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.11\jcl-over-slf4j-1.7.11.jar;D:\Documents\.m2\repository\org\springframework\spring-aspects\4.1.6.RELEASE\spring-aspects-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\com\h2database\h2\1.4.185\h2-1.4.185.jar;D:\Documents\.m2\repository\mysql\mysql-connector-java\5.1.34\mysql-connector-java-5.1.34.jar;D:\Documents\.m2\repository\org\springframework\spring-test\4.1.6.RELEASE\spring-test-4.1.6.RELEASE.jar;D:\Documents\.m2\repository\junit\junit\4.12\junit-4.12.jar;D:\Documents\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, javax.persistence.validation.mode=AUTO, java.vm.specification.version=1.7, sun.arch.data.model=64, java.home=D:\Java\jdk1.7.0_65\jre, sun.java.command=E:\ppsfile\springJpaExample2\target\surefire\surefirebooter1262736203581851621.jar E:\ppsfile\springJpaExample2\target\surefire\surefire6601009044021179354tmp E:\ppsfile\springJpaExample2\target\surefire\surefire_07806930729431288815tmp, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.specification.vendor=Oracle Corporation, user.language=zh, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.7.0_65, java.ext.dirs=D:\Java\jdk1.7.0_65\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=D:\Java\jdk1.7.0_65\jre\lib\resources.jar;D:\Java\jdk1.7.0_65\jre\lib\rt.jar;D:\Java\jdk1.7.0_65\jre\lib\sunrsasign.jar;D:\Java\jdk1.7.0_65\jre\lib\jsse.jar;D:\Java\jdk1.7.0_65\jre\lib\jce.jar;D:\Java\jdk1.7.0_65\jre\lib\charsets.jar;D:\Java\jdk1.7.0_65\jre\lib\jfr.jar;D:\Java\jdk1.7.0_65\jre\classes, java.vendor=Oracle Corporation, localRepository=D:\Documents\.m2\repository, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=windows, sun.cpu.isalist=amd64}
+2016-06-23 22:21:18 [main] DEBUG o.h.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+2016-06-23 22:21:18 [main] DEBUG o.hibernate.engine.spi.CascadeStyles - External cascade style regsitration [persist : STYLE_PERSIST_SKIPLAZY] overrode base registration [STYLE_PERSIST]
+2016-06-23 22:21:18 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.MySQLDialect]
+2016-06-23 22:21:18 [main] DEBUG o.h.p.entity.AbstractEntityPersister - Static SQL for entity: com.journaldev.spring.jpa.model.Employee
+2016-06-23 22:21:18 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Version select: select id from Employee where id =?
+2016-06-23 22:21:18 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Snapshot select: select employee_.id, employee_.name as name2_0_, employee_.role as role3_0_ from Employee employee_ where employee_.id=?
+2016-06-23 22:21:18 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Insert 0: insert into Employee (name, role, id) values (?, ?, ?)
+2016-06-23 22:21:18 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Update 0: update Employee set name=?, role=? where id=?
+2016-06-23 22:21:18 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Delete 0: delete from Employee where id=?
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@346db1c3]
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : role
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.journaldev.spring.jpa.model.Employee)
+    - Returns
+       - EntityReturnImpl(entity=com.journaldev.spring.jpa.model.Employee, querySpaceUid=&lt;gen:0&gt;, path=com.journaldev.spring.jpa.model.Employee)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.journaldev.spring.jpa.model.Employee)
+          - SQL table alias mapping - employee0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-06-23 22:21:18 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.journaldev.spring.jpa.model.Employee [NONE]: select employee0_.id as id1_0_0_, employee0_.name as name2_0_0_, employee0_.role as role3_0_0_ from Employee employee0_ where employee0_.id=?
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@68485eb2]
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : role
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.journaldev.spring.jpa.model.Employee)
+    - Returns
+       - EntityReturnImpl(entity=com.journaldev.spring.jpa.model.Employee, querySpaceUid=&lt;gen:0&gt;, path=com.journaldev.spring.jpa.model.Employee)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.journaldev.spring.jpa.model.Employee)
+          - SQL table alias mapping - employee0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-06-23 22:21:18 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.journaldev.spring.jpa.model.Employee [READ]: select employee0_.id as id1_0_0_, employee0_.name as name2_0_0_, employee0_.role as role3_0_0_ from Employee employee0_ where employee0_.id=?
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@68190e6b]
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : role
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.journaldev.spring.jpa.model.Employee)
+    - Returns
+       - EntityReturnImpl(entity=com.journaldev.spring.jpa.model.Employee, querySpaceUid=&lt;gen:0&gt;, path=com.journaldev.spring.jpa.model.Employee)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.journaldev.spring.jpa.model.Employee)
+          - SQL table alias mapping - employee0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-06-23 22:21:18 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.journaldev.spring.jpa.model.Employee [UPGRADE]: select employee0_.id as id1_0_0_, employee0_.name as name2_0_0_, employee0_.role as role3_0_0_ from Employee employee0_ where employee0_.id=? for update
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@77fe2c5b]
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : role
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.journaldev.spring.jpa.model.Employee)
+    - Returns
+       - EntityReturnImpl(entity=com.journaldev.spring.jpa.model.Employee, querySpaceUid=&lt;gen:0&gt;, path=com.journaldev.spring.jpa.model.Employee)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.journaldev.spring.jpa.model.Employee)
+          - SQL table alias mapping - employee0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-06-23 22:21:18 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.journaldev.spring.jpa.model.Employee [UPGRADE_NOWAIT]: select employee0_.id as id1_0_0_, employee0_.name as name2_0_0_, employee0_.role as role3_0_0_ from Employee employee0_ where employee0_.id=? for update
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@602ef969]
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : role
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.journaldev.spring.jpa.model.Employee)
+    - Returns
+       - EntityReturnImpl(entity=com.journaldev.spring.jpa.model.Employee, querySpaceUid=&lt;gen:0&gt;, path=com.journaldev.spring.jpa.model.Employee)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.journaldev.spring.jpa.model.Employee)
+          - SQL table alias mapping - employee0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-06-23 22:21:18 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.journaldev.spring.jpa.model.Employee [UPGRADE_SKIPLOCKED]: select employee0_.id as id1_0_0_, employee0_.name as name2_0_0_, employee0_.role as role3_0_0_ from Employee employee0_ where employee0_.id=? for update
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4b276fd9]
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : role
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.journaldev.spring.jpa.model.Employee)
+    - Returns
+       - EntityReturnImpl(entity=com.journaldev.spring.jpa.model.Employee, querySpaceUid=&lt;gen:0&gt;, path=com.journaldev.spring.jpa.model.Employee)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.journaldev.spring.jpa.model.Employee)
+          - SQL table alias mapping - employee0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-06-23 22:21:18 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.journaldev.spring.jpa.model.Employee [FORCE]: select employee0_.id as id1_0_0_, employee0_.name as name2_0_0_, employee0_.role as role3_0_0_ from Employee employee0_ where employee0_.id=? for update
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@48c02bce]
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : role
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.journaldev.spring.jpa.model.Employee)
+    - Returns
+       - EntityReturnImpl(entity=com.journaldev.spring.jpa.model.Employee, querySpaceUid=&lt;gen:0&gt;, path=com.journaldev.spring.jpa.model.Employee)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.journaldev.spring.jpa.model.Employee)
+          - SQL table alias mapping - employee0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-06-23 22:21:18 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.journaldev.spring.jpa.model.Employee [PESSIMISTIC_READ]: select employee0_.id as id1_0_0_, employee0_.name as name2_0_0_, employee0_.role as role3_0_0_ from Employee employee0_ where employee0_.id=? lock in share mode
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@e9bb131]
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : role
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.journaldev.spring.jpa.model.Employee)
+    - Returns
+       - EntityReturnImpl(entity=com.journaldev.spring.jpa.model.Employee, querySpaceUid=&lt;gen:0&gt;, path=com.journaldev.spring.jpa.model.Employee)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.journaldev.spring.jpa.model.Employee)
+          - SQL table alias mapping - employee0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-06-23 22:21:18 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.journaldev.spring.jpa.model.Employee [PESSIMISTIC_WRITE]: select employee0_.id as id1_0_0_, employee0_.name as name2_0_0_, employee0_.role as role3_0_0_ from Employee employee0_ where employee0_.id=? for update
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3798d24d]
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : role
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.journaldev.spring.jpa.model.Employee)
+    - Returns
+       - EntityReturnImpl(entity=com.journaldev.spring.jpa.model.Employee, querySpaceUid=&lt;gen:0&gt;, path=com.journaldev.spring.jpa.model.Employee)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.journaldev.spring.jpa.model.Employee)
+          - SQL table alias mapping - employee0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-06-23 22:21:18 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.journaldev.spring.jpa.model.Employee [PESSIMISTIC_FORCE_INCREMENT]: select employee0_.id as id1_0_0_, employee0_.name as name2_0_0_, employee0_.role as role3_0_0_ from Employee employee0_ where employee0_.id=? for update
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1a3193e0]
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : role
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.journaldev.spring.jpa.model.Employee)
+    - Returns
+       - EntityReturnImpl(entity=com.journaldev.spring.jpa.model.Employee, querySpaceUid=&lt;gen:0&gt;, path=com.journaldev.spring.jpa.model.Employee)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.journaldev.spring.jpa.model.Employee)
+          - SQL table alias mapping - employee0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-06-23 22:21:18 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.journaldev.spring.jpa.model.Employee [OPTIMISTIC]: select employee0_.id as id1_0_0_, employee0_.name as name2_0_0_, employee0_.role as role3_0_0_ from Employee employee0_ where employee0_.id=?
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4deff4f]
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2016-06-23 22:21:18 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : role
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace &lt;gen:0&gt;
+2016-06-23 22:21:18 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.journaldev.spring.jpa.model.Employee)
+    - Returns
+       - EntityReturnImpl(entity=com.journaldev.spring.jpa.model.Employee, querySpaceUid=&lt;gen:0&gt;, path=com.journaldev.spring.jpa.model.Employee)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=com.journaldev.spring.jpa.model.Employee)
+          - SQL table alias mapping - employee0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2016-06-23 22:21:18 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.journaldev.spring.jpa.model.Employee [OPTIMISTIC_FORCE_INCREMENT]: select employee0_.id as id1_0_0_, employee0_.name as name2_0_0_, employee0_.role as role3_0_0_ from Employee employee0_ where employee0_.id=?
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.journaldev.spring.jpa.model.Employee: select employee0_.id as id1_0_0_, employee0_.name as name2_0_0_, employee0_.role as role3_0_0_ from Employee employee0_ where employee0_.id=?
+2016-06-23 22:21:18 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.journaldev.spring.jpa.model.Employee: select employee0_.id as id1_0_0_, employee0_.name as name2_0_0_, employee0_.role as role3_0_0_ from Employee employee0_ where employee0_.id=?
+2016-06-23 22:21:18 [main] DEBUG o.h.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@5cc451f6
+2016-06-23 22:21:18 [main] DEBUG o.h.internal.SessionFactoryRegistry - Registering SessionFactory: 8fd76afd-adfb-4dc9-bcd0-14a4bd369018 (&lt;unnamed&gt;)
+2016-06-23 22:21:18 [main] DEBUG o.h.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+2016-06-23 22:21:18 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiated session factory
+2016-06-23 22:21:18 [main] DEBUG o.h.internal.NamedQueryRepository - Checking 0 named HQL queries
+2016-06-23 22:21:18 [main] DEBUG o.h.internal.NamedQueryRepository - Checking 0 named SQL queries
+2016-06-23 22:21:18 [main] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+2016-06-23 22:21:18 [main] DEBUG o.h.j.i.schemagen.JpaSchemaGenerator - No actions specified; doing nothing
+2016-06-23 22:21:18 [main] DEBUG o.h.j.i.EntityManagerFactoryRegistry - Initializing EntityManagerFactoryRegistry : org.hibernate.jpa.internal.EntityManagerFactoryRegistry@74de0d7b
+2016-06-23 22:21:18 [main] DEBUG o.h.j.i.EntityManagerFactoryRegistry - Registering EntityManagerFactory: JPAExamples 
+2016-06-23 22:21:18 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+2016-06-23 22:21:18 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+2016-06-23 22:21:20 [main] DEBUG o.h.e.jdbc.spi.SqlExceptionHelper - Could not open connection [n/a]
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.7.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[na:1.7.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.7.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[na:1.7.0_65]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377) ~[mysql-connector-java-5.1.34.jar:5.1.34]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1036) ~[mysql-connector-java-5.1.34.jar:5.1.34]
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:338) ~[mysql-connector-java-5.1.34.jar:5.1.34]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2232) ~[mysql-connector-java-5.1.34.jar:5.1.34]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2265) ~[mysql-connector-java-5.1.34.jar:5.1.34]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2064) ~[mysql-connector-java-5.1.34.jar:5.1.34]
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:790) ~[mysql-connector-java-5.1.34.jar:5.1.34]
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:44) ~[mysql-connector-java-5.1.34.jar:5.1.34]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.7.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[na:1.7.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.7.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[na:1.7.0_65]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:377) ~[mysql-connector-java-5.1.34.jar:5.1.34]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:395) ~[mysql-connector-java-5.1.34.jar:5.1.34]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325) ~[mysql-connector-java-5.1.34.jar:5.1.34]
+	at java.sql.DriverManager.getConnection(DriverManager.java:571) ~[na:1.7.0_65]
+	at java.sql.DriverManager.getConnection(DriverManager.java:187) ~[na:1.7.0_65]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153) ~[spring-jdbc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144) ~[spring-jdbc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:155) ~[spring-jdbc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:120) ~[spring-jdbc-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139) ~[hibernate-core-4.3.8.Final.jar:4.3.8.Final]
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:380) ~[hibernate-core-4.3.8.Final.jar:4.3.8.Final]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:228) ~[hibernate-core-4.3.8.Final.jar:4.3.8.Final]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:171) ~[hibernate-core-4.3.8.Final.jar:4.3.8.Final]
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.doBegin(JdbcTransaction.java:67) ~[hibernate-core-4.3.8.Final.jar:4.3.8.Final]
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.begin(AbstractTransactionImpl.java:162) ~[hibernate-core-4.3.8.Final.jar:4.3.8.Final]
+	at org.hibernate.internal.SessionImpl.beginTransaction(SessionImpl.java:1435) [hibernate-core-4.3.8.Final.jar:4.3.8.Final]
+	at org.hibernate.jpa.internal.TransactionImpl.begin(TransactionImpl.java:61) [hibernate-entitymanager-4.3.8.Final.jar:4.3.8.Final]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:166) [spring-orm-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:380) [spring-orm-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373) [spring-tx-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.test.context.transaction.TransactionContext.startTransaction(TransactionContext.java:98) [spring-test-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:200) [spring-test-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:249) [spring-test-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:72) [spring-test-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82) [spring-test-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73) [spring-test-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224) [spring-test-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83) [spring-test-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68) [spring-test-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163) [spring-test-4.1.6.RELEASE.jar:4.1.6.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112) [surefire-junit4-2.12.4.jar:2.12.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_65]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189) [surefire-api-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) [surefire-booter-2.12.4.jar:2.12.4]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.7.0_65]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.7.0_65]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339) ~[na:1.7.0_65]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200) ~[na:1.7.0_65]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182) ~[na:1.7.0_65]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.7.0_65]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.7.0_65]
+	at java.net.Socket.connect(Socket.java:579) ~[na:1.7.0_65]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213) ~[mysql-connector-java-5.1.34.jar:5.1.34]
+	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:297) ~[mysql-connector-java-5.1.34.jar:5.1.34]
+	... 59 common frames omitted
+2016-06-23 22:21:20 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2016-06-23 22:21:20 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2016-06-23 22:21:20 [main] DEBUG o.h.j.spi.AbstractEntityManagerImpl - Mark transaction for rollback
+</system-out>
+  </testcase>
+</testsuite>

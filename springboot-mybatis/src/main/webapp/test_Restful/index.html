@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="axios.min.js"></script>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+<ul>
+    <li v-for="item in dataInfo">
+        <p>userId:{{item.userId}}</p>
+        <p>userName:{{item.userName}}</p>
+        <p>userAge:{{item.userAge}}</p>
+        <p>userSex:{{item.userSex}}</p>
+    </li>
+</ul>
+</div>
+<script>
+    axios.get('http://127.0.0.1:8888/users/findAll')
+        .then(function (response) {
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    dataInfo: response.data
+                }
+            })
+
+        }).catch(function (error) {
+        console.log(error)
+
+    })
+</script>
+</body>
+</html>
